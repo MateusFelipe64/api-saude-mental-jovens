@@ -1,0 +1,13 @@
+{
+  "name": "mente-jovem-api",
+  "version": "1.0.0",
+  "description": "API sobre saúde mental dos jovens",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
