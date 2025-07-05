@@ -5,9 +5,16 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js" ,
+    "dev": "nodemon index.js",
+    "build": "prisma generate --schema=prisma/schema.prisma",
+    "prisma:migrate": "prisma migrate dev --schema=prisma/schema.prisma",
+    "prisma:generate": "prisma generate --schema=prisma/schema.prisma"
   },
   "dependencies": {
-    "express": "^4.18.2"
+    "@prisma/client": "^6.11.1",
+    "express": "^4.18.2",
+    "nodemon": "^3.1.10",
+    "prisma": "^6.11.1"
   }
 }
