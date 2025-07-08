@@ -3,7 +3,7 @@ import cors from "cors";
 import menteRoutes from "./routes/menteRoutes.js";
 
 const app = express();
-const PORT = 3000;
+const PORT = 3001;
 
 app.use(cors()); // Permite requisições de outros domínios
 app.use(express.json());
